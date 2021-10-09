@@ -10,13 +10,12 @@ class AppThemData with _$AppThemData {
   }) = _AppThemeData;
 }
 
-
 @freezed
 class AppThemColorsData with _$AppThemColorsData {
   const factory AppThemColorsData({
     @Default(Color(0xFF029248)) Color accent1,
     @Default(Color(0xFF92027c)) Color accent2,
     @Default(Color(0xFFe203c1)) Color accent3,
-    @Default(Color(0xFF82e203)) Color background1,
+    @Default(Color(0xFFFFFFFF)) Color background1,
   }) = _AppThemColorsData;
 }

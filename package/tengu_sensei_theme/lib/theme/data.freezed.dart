@@ -161,7 +161,7 @@ class _$AppThemColorsDataTearOff {
       {Color accent1 = const Color(0xFF029248),
       Color accent2 = const Color(0xFF92027c),
       Color accent3 = const Color(0xFFe203c1),
-      Color background1 = const Color(0xFF82e203)}) {
+      Color background1 = const Color(0xFFFFFFFF)}) {
     return _AppThemColorsData(
       accent1: accent1,
       accent2: accent2,
@@ -287,7 +287,7 @@ class _$_AppThemColorsData implements _AppThemColorsData {
       {this.accent1 = const Color(0xFF029248),
       this.accent2 = const Color(0xFF92027c),
       this.accent3 = const Color(0xFFe203c1),
-      this.background1 = const Color(0xFF82e203)});
+      this.background1 = const Color(0xFFFFFFFF)});
 
   @JsonKey(defaultValue: const Color(0xFF029248))
   @override
@@ -298,7 +298,7 @@ class _$_AppThemColorsData implements _AppThemColorsData {
   @JsonKey(defaultValue: const Color(0xFFe203c1))
   @override
   final Color accent3;
-  @JsonKey(defaultValue: const Color(0xFF82e203))
+  @JsonKey(defaultValue: const Color(0xFFFFFFFF))
   @override
   final Color background1;
 
