@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   tengu_sensei_theme:
     path: package/tengu_sensei_theme
+  flutter_riverpod: ^ 1.0.0-dev.10
 
 dev_dependencies:
   flutter_test:
