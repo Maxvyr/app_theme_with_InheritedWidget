@@ -30,24 +30,17 @@ class MyApp extends ConsumerWidget {
         final theme = AppTheme.of(context);
         return Container(
           color: theme.color.background1,
-          child: const MyHomePage(),
+          child: const HomePage(),
         );
       }),
     );
   }
 }
+class HomePage extends ConsumerWidget {
+const HomePage({Key? key}) : super(key: key);
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    final theme = AppTheme.of(context);
+@override
+Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -58,9 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  debugPrint(ref.read(colorThemeProvider).state.toString());
                   ref.read(colorThemeProvider).state = AppColorTheme.light;
-                  debugPrint(ref.watch(colorThemeProvider).state.toString());
                 },
                 child: const Text("Light"),
               ),
@@ -79,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         }),
       ],
     );
-  }
+}
 }
 
 class ColorGallery extends StatelessWidget {
